@@ -1,15 +1,8 @@
-.projects li {
-    background-color: gray;
-}
-
-#sobre p.bio {
-    background-color:blue;
-}
-
-h1{
-    background-color: #4285F4; 
+.identity {
+    background-color: #4285F4;
     color: #FFF;
 }
+
 
 .dark{
     background-color: #2B313E;
@@ -18,6 +11,26 @@ h1{
 
 .light{
     background-color: #fcfcfd;
-    color: 2B313E;
+    color: #2B313E;
+}
+
+header li a {
+    color: #99A0B0;
+}
+
+.projects li {
+    background-color: #6F768B;
+}
+
+.projects li a {
+    color: #fff
+}
+
+.projects li p {
+    color: #d2d6e2;
+}
+
+#sobre p.bio {
+    color: #4285F4;
 }
 
