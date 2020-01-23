@@ -1,17 +1,28 @@
-.identity {
-    background-color: #4285F4;
-    color: #FFF;
-}
-
-
 .dark{
     background-color: #2B313E;
     color: #fcfcfd;
 }
 
+.identity {
+    background-color: #4285F4;
+    color: #FFF;
+}
+
+.identity h1 {
+    font-size: 2.5em;
+}
+
+.identity h2 {
+    font-size: 1.5em;
+}
+
 .light{
     background-color: #fcfcfd;
     color: #2B313E;
+}
+
+section h3 {
+    font-size: 1.7em;
 }
 
 header li a {
@@ -23,6 +34,7 @@ header li a {
 }
 
 .projects li a {
+    font-size: 1.3em;
     color: #fff
 }
 
@@ -31,6 +43,18 @@ header li a {
 }
 
 #sobre p.bio {
+    font-size: 1.5em;
     color: #4285F4;
 }
+
+#sobre img{
+    width: 200px;
+}
+
+p{
+    font-size: 14px;
+}
+
+
+
 
