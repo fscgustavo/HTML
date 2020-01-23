@@ -7,6 +7,24 @@ body{
     color: #fcfcfd;
 }
 
+.light{
+    background-color: #fcfcfd;
+    color: #2B313E;
+}
+
+section h3 {
+    font-size: 1.7em;
+}
+
+header li {
+    display: inline-block;
+}
+
+header li a {
+    color: #99A0B0;
+    font-weight: lighter;
+}
+
 .identity {
     background-color: #4285F4;
     color: #FFF;
@@ -19,20 +37,6 @@ body{
 .identity h2 {
     font-size: 1.5em;
     font-weight: 300;
-}
-
-.light{
-    background-color: #fcfcfd;
-    color: #2B313E;
-}
-
-section h3 {
-    font-size: 1.7em;
-}
-
-header li a {
-    color: #99A0B0;
-    font-weight: lighter;
 }
 
 .projects li {
@@ -55,6 +59,11 @@ header li a {
 
 #sobre img{
     width: 200px;
+}
+
+#contato li {
+    display: inline-block;
+
 }
 
 p{
