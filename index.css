@@ -1,6 +1,23 @@
 .projects li {
     background-color: gray;
 }
-#sobre p.bio{
+
+#sobre p.bio {
     background-color:blue;
 }
+
+h1{
+    background-color: #4285F4; 
+    color: #FFF;
+}
+
+.dark{
+    background-color: #2B313E;
+    color: #fcfcfd;
+}
+
+.light{
+    background-color: #fcfcfd;
+    color: 2B313E;
+}
+
