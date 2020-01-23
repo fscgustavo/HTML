@@ -16,6 +16,10 @@ section h3 {
     font-size: 1.7em;
 }
 
+header {
+    border: 1px solid #ccc;
+}
+
 header li {
     display: inline-block;
 }
