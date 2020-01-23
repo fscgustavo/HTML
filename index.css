@@ -1,3 +1,7 @@
+body{
+    font-family: Helvetica, sans-serif;
+}
+
 .dark{
     background-color: #2B313E;
     color: #fcfcfd;
@@ -14,6 +18,7 @@
 
 .identity h2 {
     font-size: 1.5em;
+    font-weight: 300;
 }
 
 .light{
@@ -27,6 +32,7 @@ section h3 {
 
 header li a {
     color: #99A0B0;
+    font-weight: lighter;
 }
 
 .projects li {
