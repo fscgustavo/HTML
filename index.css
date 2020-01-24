@@ -13,6 +13,10 @@ i{
     color: #000;
 }
 
+h3{
+    text-transform: uppercase;
+}
+
 .dark{
     background-color: #2B313E;
     color: #fcfcfd;
@@ -40,7 +44,7 @@ section h3 {
 
 section img {
     width: 100%;
-    max-width: 200px;
+    max-width: 400px;
 }
 
 header {
@@ -91,9 +95,12 @@ header li a {
     width: 30%;
 }
 
+.projects-header{
+    width: 300px;
+}
+
 .projects-header h3 {
     margin-top: 1em;
-    text-transform: uppercase;
 }
 
 .projects{
@@ -102,7 +109,7 @@ header li a {
 
 .projects li {
     background-color: #6F768B;
-    padding: 1.2em;
+    padding: 1.5em;
     margin-bottom: 1.7em;
 }
 
@@ -119,7 +126,7 @@ header li a {
 }
 
 #sobre img {
-    width: 180px;
+    width: 200px;
     float: right;
 }
 
@@ -139,11 +146,12 @@ header li a {
     width: 50%;
 }
 
-
+#contato{
+    padding-top: 3%;
+}
 #contato li {
     display: inline-block;
-    box-sizing: content-box;
-    margin: 1em;
+    margin: 1.5em;
 }
 
 .fa{
