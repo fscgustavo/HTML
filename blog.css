@@ -1,0 +1,19 @@
+.corpo{
+    padding: 5% 20%;
+}
+.item{
+    width: 50%
+}
+ 
+.target{
+    padding: 2px;
+    background-color: blue;
+    color: white;
+}
+.btnBlog{
+    border: 1px solid yellow;
+    padding: 5px;
+    color: yellow;
+    font-weight: bolder;
+    float: right;
+}
