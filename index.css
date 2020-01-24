@@ -85,7 +85,7 @@ header li a {
     margin-bottom: 0.7em;
 }
 
-.identity h2 {
+.identity h2, .item-header h2{
     font-size: 1.5em;
     font-weight: 300;
 }
