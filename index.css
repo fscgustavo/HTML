@@ -5,6 +5,18 @@ body{
     font-family: Helvetica, sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
+i{
+    color: #000;
+}
+
+h3{
+    text-transform: uppercase;
+}
+
 .dark{
     background-color: #2B313E;
     color: #fcfcfd;
@@ -22,6 +34,7 @@ body{
 
 section{
     padding: 2em 0em;
+    text-align: center;
 }
 
 section h3 {
@@ -31,7 +44,7 @@ section h3 {
 
 section img {
     width: 100%;
-    max-width: 200px;
+    max-width: 400px;
 }
 
 header {
@@ -41,6 +54,13 @@ header {
     position: fixed;
     width: 100%;
     height: 3em;
+
+}
+
+header ul{
+    text-align: right;
+    text-transform: uppercase;
+    margin-right: 5%;
 
 }
 
@@ -75,6 +95,10 @@ header li a {
     width: 30%;
 }
 
+.projects-header{
+    width: 300px;
+}
+
 .projects-header h3 {
     margin-top: 1em;
 }
@@ -85,27 +109,31 @@ header li a {
 
 .projects li {
     background-color: #6F768B;
-    padding: 1em;
-    margin-bottom: 2em;
+    padding: 1.5em;
+    margin-bottom: 1.7em;
 }
 
 .projects li a {
     font-size: 1.3em;
-    color: #fff
+    color: #fff;
 }
 
 .projects li p {
     color: #d2d6e2;
-    margin-top: 0.5em;
+    margin-top: 1em;
+    text-align: justify;
+    line-height: 1.7;
 }
 
 #sobre img {
-    width: 180px;
+    width: 200px;
     float: right;
 }
 
 #sobre p.text{
     margin: 1em;
+    text-align: justify;
+    line-height: 1.4;
 }
 
 #sobre p.bio {
@@ -118,10 +146,24 @@ header li a {
     width: 50%;
 }
 
-
+#contato{
+    padding-top: 3%;
+}
 #contato li {
     display: inline-block;
-    margin: 1em;
+    margin: 1.5em;
+}
+
+.fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    color: black;
+    text-align: center;
+}
+
+.fa:hover{
+    opacity: 0.7;
 }
 
 p{
