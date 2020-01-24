@@ -93,6 +93,7 @@ header li a {
 .projects-header{
     float: left;
     width: 30%;
+    padding-top: 10%;
 }
 
 .projects-header{
@@ -109,7 +110,7 @@ header li a {
 
 .projects li {
     background-color: #6F768B;
-    padding: 1.5em;
+    padding: 1.5em 3em;
     margin-bottom: 1.7em;
 }
 
@@ -126,8 +127,10 @@ header li a {
 }
 
 #sobre img {
-    width: 200px;
+    width: 250px;
     float: right;
+    margin-top: 5%;
+
 }
 
 #sobre p.text{
@@ -146,20 +149,18 @@ header li a {
     width: 50%;
 }
 
+
 #contato{
     padding-top: 3%;
 }
 #contato li {
     display: inline-block;
     margin: 1.5em;
+    font-size: 25px;
 }
 
 .fa{
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
     color: black;
-    text-align: center;
 }
 
 .fa:hover{
