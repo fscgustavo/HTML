@@ -28,7 +28,7 @@ header{
     color: white;
 }
 
-header ul{
+header ul, div.ftcontato ul{
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -57,14 +57,15 @@ section{
 article.principal{
     height: 92vh;
     width: 100vw;
-    background-color:blue;
+    background-color: #3A393E;
 }
 
 article.funcionamento{
     height: 60vh;
     width: 100vw;
-    background-color: blueviolet;
+    background-color: #FFFFFF;
 }
+
 
 footer{
     height: 40vh;
@@ -79,6 +80,45 @@ div.ftajuda, div.ftdownload{
     height: 70%;
     width: 49.5%;
     border: 1px solid red;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    background-color: #3A393E;
+
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+}
+
+div.ftajuda div.item, div.ftdownload div.item{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+}
+
+div.item div{
+    margin-top:10%;
+    text-align: center;
+}
+
+div.ftajuda img{
+    height: 30px;
+    width: 30px;
+}
+
+div.ftdownload button{
+    border: none;
+    border-radius: 2px;
+}
+
+div.ftdownload button img{
+    height: 28px;
+    width: 104px;
 }
 
 div.ftcontato, div.ftlogo{
@@ -90,6 +130,21 @@ div.ftcontato, div.ftlogo{
     align-items: center;
 }
 
+div.ftcontato{
+    background-color: #303135;
+}
+
+
+div.ftcontato ul li{
+    padding-left: 20px;
+}
+div.ftcontato ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
 div.ftlogo{
     background-color: black;
 }
@@ -98,5 +153,7 @@ div.ftlogo img{
     height: 16px;
     width: 94px;
 }
+
+
 
 
