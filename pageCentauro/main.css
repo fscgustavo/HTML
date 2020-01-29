@@ -52,14 +52,13 @@ header ul li a{
     border: none;
 }
 
-section{
-    
-}
 
 article.principal{
     height: 92vh;
     width: 100vw;
     background-color: #3A393E;
+    background: url(assets/imagem-alice-desktop.jpg) no-repeat;
+    background-size: cover;
 }
 
 article.funcionamento{
