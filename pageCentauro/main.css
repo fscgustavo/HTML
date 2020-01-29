@@ -143,7 +143,7 @@ header h1, div.principal-produtos h1{
 
 
 article.funcionamento{
-    height: 70vh;
+    height: 75vh;
     width: 100vw;
     background-color: #FFFFFF;
     color: #3A393E;
@@ -170,7 +170,7 @@ article.funcionamento h4, article.funcionamento h5{
     text-transform: uppercase;
 }
 
-article.funcionamento .detalhes{
+article.funcionamento div.detalhes{
     width: 100%;
     height: 75%;
     display: flex;
@@ -178,11 +178,11 @@ article.funcionamento .detalhes{
     flex-wrap: wrap;
 }
 
-article.funcionamento .detalhes div{
-    border: 1px solid red;
+article.funcionamento div.detalhes div{
     width: 25%;
     box-sizing: border-box;
     height: 40%;
+    padding: 10px 30px;
 }
 
 article.funcionamento .detalhes img{
@@ -198,7 +198,7 @@ article.funcionamento .detalhes p{
 footer{
     height: 40vh;
     width:100vw;
-    background-color:salmon;
+    background-color:black;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -214,7 +214,7 @@ div.ftajuda, div.ftdownload{
     flex-wrap: wrap;
     flex-direction: column;
     
-    background-color: #303135;
+    background-color: #3A393E;
 
     text-transform: uppercase;
     color: white;
@@ -231,6 +231,10 @@ div.ftajuda div.item, div.ftdownload div.item{
 div.item div{
     margin-top:30px;
     text-align: center;
+}
+
+div.ftajuda{
+    border-right: 1px solid gray;
 }
 
 div.ftajuda img{
