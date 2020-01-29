@@ -6,6 +6,7 @@
 body{
     
     font-family: Verdana, Helvetica, sans-serif;
+    font-weight: normal;
     overflow-x: hidden;
 }
 .container{
@@ -65,6 +66,7 @@ article.funcionamento{
     height: 60vh;
     width: 100vw;
     background-color: #FFFFFF;
+    color: #3A393E;
 }
 
 article.funcionamento .container{
@@ -74,15 +76,29 @@ article.funcionamento .container{
     text-align: center;
 }
 
+article.funcionamento h4, article.funcionamento h5{
+    text-transform: uppercase;
+}
+
 article.funcionamento .detalhes{
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 
-.detalhes div{
+article.funcionamento .detalhes div{
     border: 1px solid red;
     width: 25%;
+}
+
+article.funcionamento .detalhes img{
+    width: 118px;
+    height: 114px;
+}
+
+article.funcionamento .detalhes p{
+
+    font-size: 12px;
 }
 
 footer{
@@ -105,7 +121,7 @@ div.ftajuda, div.ftdownload{
     flex-wrap: wrap;
     flex-direction: column;
     
-    background-color: #3A393E;
+    background-color: #303135;
 
     text-transform: uppercase;
     color: white;
