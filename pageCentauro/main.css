@@ -6,13 +6,17 @@
 body{
     
     font-family: Verdana, Helvetica, sans-serif;
+    font-weight: normal;
     overflow-x: hidden;
+}
+
+button:hover{
+    cursor: pointer;
 }
 .container{
     height: 100%;
     width: 70%;
     margin: auto;
-    border: 1px solid blue;
 }
 
 header div.container{
@@ -20,6 +24,9 @@ header div.container{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    box-sizing: border-box;
+    padding: 0px 60px;
 }
 
 header{
@@ -35,6 +42,9 @@ header ul, div.ftcontato ul{
     list-style: none;
 }
 
+header ul li{
+    padding-left: 5px;
+}
 header ul li a{
     text-decoration: none;
     color: white;
@@ -51,20 +61,93 @@ header ul li a{
     border: none;
 }
 
-section{
-    
-}
 
 article.principal{
     height: 92vh;
     width: 100vw;
     background-color: #3A393E;
+    background: url(assets/imagem-alice-desktop.jpg) no-repeat;
+    background-size: cover;
 }
 
+article.principal .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+div.principal-chamada{
+    text-transform: uppercase;
+    text-align: center;
+
+    padding-bottom: 20px;
+}
+
+div.principal-chamada h1{
+    font-size: 45px;
+    font-weight: normal;
+}
+
+div.principal-chamada p{
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.subtitulo-principal{
+    text-align: center;
+    border-top: 1px solid white;
+    padding: 10px 70px 40px 70px;
+    font-size: 12px;
+}
+
+div.principal-produtos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1, div.principal-produtos h1{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.btnPlay{
+    background-color: transparent;
+    border: none;
+    height: 60px;
+    width: 60px;
+
+    background: url(assets/centauro-exp-botao-play.png);
+    background-size:cover;
+
+    margin-top: 30px;
+}
+
+.btnEntenda{
+    background-color: rgba(200, 200, 200, 0.58);
+    border: 1px solid white;
+    padding: 5px 25px;
+    
+
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+
+    margin-top: 20px;
+}
+
+
 article.funcionamento{
-    height: 60vh;
+    height: 70vh;
     width: 100vw;
     background-color: #FFFFFF;
+    color: #3A393E;
+    
 }
 
 article.funcionamento .container{
@@ -74,15 +157,42 @@ article.funcionamento .container{
     text-align: center;
 }
 
-article.funcionamento .detalhes{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+article.funcionamento p.descricao{
+    padding: 35px 160px 15px 160px;
+    font-size: 16px;
 }
 
-.detalhes div{
+article.funcionamento h4{
+    padding: 20px 0;
+}
+
+article.funcionamento h4, article.funcionamento h5{
+    text-transform: uppercase;
+}
+
+article.funcionamento .detalhes{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+article.funcionamento .detalhes div{
     border: 1px solid red;
     width: 25%;
+    box-sizing: border-box;
+    height: 40%;
+}
+
+article.funcionamento .detalhes img{
+    width: 118px;
+    height: 114px;
+}
+
+article.funcionamento .detalhes p{
+    font-size: 12px;
+    margin-top: 20px;
 }
 
 footer{
@@ -96,8 +206,7 @@ footer{
 
 div.ftajuda, div.ftdownload{
     height: 70%;
-    width: 49.5%;
-    border: 1px solid red;
+    width: 49.8%;
 
     display: flex;
     align-items: center;
@@ -105,7 +214,7 @@ div.ftajuda, div.ftdownload{
     flex-wrap: wrap;
     flex-direction: column;
     
-    background-color: #3A393E;
+    background-color: #303135;
 
     text-transform: uppercase;
     color: white;
@@ -120,7 +229,7 @@ div.ftajuda div.item, div.ftdownload div.item{
 }
 
 div.item div{
-    margin-top:10%;
+    margin-top:30px;
     text-align: center;
 }
 
@@ -142,7 +251,6 @@ div.ftdownload button img{
 div.ftcontato, div.ftlogo{
     height: 15%;
     width:100%;
-    border: 1px solid blue;
     display: flex;
     justify-content: center;
     align-items: center;
