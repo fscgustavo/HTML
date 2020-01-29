@@ -10,8 +10,9 @@ body{
 }
 .container{
     height: 100%;
-    width: 50%;
+    width: 70%;
     margin: auto;
+    border: 1px solid blue;
 }
 
 header div.container{
@@ -66,6 +67,23 @@ article.funcionamento{
     background-color: #FFFFFF;
 }
 
+article.funcionamento .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+article.funcionamento .detalhes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.detalhes div{
+    border: 1px solid red;
+    width: 25%;
+}
 
 footer{
     height: 40vh;
