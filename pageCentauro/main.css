@@ -11,10 +11,28 @@ body{
     margin: auto;
 }
 
+header div.container{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 header{
     height: 8vh;
     width: 100vw;
-    background-color: red;
+    background-color: black;
+    color: white;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
 }
 section{
     
