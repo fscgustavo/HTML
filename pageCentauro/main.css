@@ -63,10 +63,11 @@ article.principal{
 }
 
 article.funcionamento{
-    height: 60vh;
+    height: 80vh;
     width: 100vw;
     background-color: #FFFFFF;
     color: #3A393E;
+    
 }
 
 article.funcionamento .container{
@@ -76,19 +77,32 @@ article.funcionamento .container{
     text-align: center;
 }
 
+article.funcionamento p.descricao{
+    padding: 35px 160px 15px 160px;
+    font-size: 16px;
+}
+
+article.funcionamento h4{
+    padding: 20px 0;
+}
+
 article.funcionamento h4, article.funcionamento h5{
     text-transform: uppercase;
 }
 
 article.funcionamento .detalhes{
     width: 100%;
+    height: 80%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 article.funcionamento .detalhes div{
     border: 1px solid red;
     width: 25%;
+    box-sizing: border-box;
+    height: 40%;
 }
 
 article.funcionamento .detalhes img{
@@ -97,8 +111,8 @@ article.funcionamento .detalhes img{
 }
 
 article.funcionamento .detalhes p{
-
     font-size: 12px;
+    margin-top: 20px;
 }
 
 footer{
@@ -136,7 +150,7 @@ div.ftajuda div.item, div.ftdownload div.item{
 }
 
 div.item div{
-    margin-top:10%;
+    margin-top:30px;
     text-align: center;
 }
 
