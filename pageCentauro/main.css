@@ -54,7 +54,7 @@ header ul li a{
 .btnComprar{
     background-color: darkred;
     border-radius: 2px;
-    font-size: 12px;
+    font-size: 16px;
     padding: 10px 24px;
     color: white;
     text-transform: uppercase;
@@ -147,18 +147,20 @@ article.funcionamento{
     width: 100vw;
     background-color: #FFFFFF;
     color: #3A393E;
+    box-sizing: content-box;
     
 }
 
 article.funcionamento .container{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
 }
 
 article.funcionamento p.descricao{
-    padding: 60px 160px 40px 160px;
+    padding: 60px 200px 40px 200px;
     font-size: 16px;
 }
 
@@ -288,19 +290,11 @@ div.ftlogo img{
 }
 
 
-/*@media only screen and(min-width:600px){
-    footer{
-        flex-direction: column;
-        
-
+@media screen and (max-width:767px){
+  
+    article.funcionamento p.descricao{
+        padding: 20px;
+        font-size: 14px;
     }
-
-    div.ftajuda, div.ftdownload{
-        width: 100%;
-    }
-
-    div.detalhes{
-        box-sizing: content-box;
-    }
-}*/
+}
 
