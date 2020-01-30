@@ -178,7 +178,6 @@ article.funcionamento h4, article.funcionamento h5{
 
 article.funcionamento div.organizer{
     box-sizing: content-box;
-    border: 1px solid red;
     width: 24%;
 }
 
@@ -193,9 +192,11 @@ article.funcionamento div.detalhes{
 article.funcionamento div.detalhes div.organizer div{
     width: 100%;
     box-sizing: border-box;
-    height: 45%;
+    height: 40%;
     padding: 0px 30px;
 }
+
+
 
 article.funcionamento .detalhes img{
     width: 118px;
@@ -257,6 +258,7 @@ div.ftajuda img{
 div.ftdownload button{
     border: none;
     border-radius: 2px;
+    margin-left: 5px;
 }
 
 div.ftdownload button img{
@@ -322,7 +324,7 @@ div.ftlogo img{
         height: 92vh;
         width: 100vw;
         background-color: #3A393E;
-        background: url(assets/imagem-alice-desktop.jpg) no-repeat left center;
+        background: url(assets/imagem-alice-desktop.jpg) no-repeat;
         background-size: cover;
     }
     
@@ -334,7 +336,6 @@ div.ftlogo img{
 
     article.funcionamento div.organizer{
         box-sizing: content-box;
-        border: 1px solid red;
         width: 100%;
     }
 
@@ -347,6 +348,61 @@ div.ftlogo img{
         text-decoration: none;
         color: white;
         font-size: 10px;
+    }
+
+   
+}
+
+
+@media screen and (min-width:767px) and (max-width:1024px){
+
+    header div.container{
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+        box-sizing: border-box;
+        padding: 0px 30px;
+
+        width: 100%;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    
+
+
+    article.principal{
+        height: 92vh;
+        width: 100vw;
+        background-color: #3A393E;
+        background: url(assets/imagem-alice-desktop.jpg) no-repeat;
+        background-size: cover;
+    }
+    
+   
+    article.funcionamento p.descricao{
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    article.funcionamento div.organizer{
+        box-sizing: content-box;
+        width: 49%;
+    }
+
+    div.ftajuda, div.ftdownload{
+        width: 49.5%;
+    }
+
+    div.ftcontato ul li a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
     }
 
    
