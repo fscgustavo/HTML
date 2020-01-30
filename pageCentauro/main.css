@@ -8,6 +8,8 @@ body{
     font-family: Verdana, Helvetica, sans-serif;
     font-weight: normal;
     overflow-x: hidden;
+
+    
 }
 
 button:hover{
@@ -147,7 +149,6 @@ article.funcionamento{
     width: 100vw;
     background-color: #FFFFFF;
     color: #3A393E;
-    box-sizing: content-box;
     
 }
 
@@ -175,18 +176,24 @@ article.funcionamento h4, article.funcionamento h5{
     text-transform: uppercase;
 }
 
+article.funcionamento div.organizer{
+    box-sizing: content-box;
+    border: 1px solid red;
+    width: 24%;
+}
+
 article.funcionamento div.detalhes{
     width: 100%;
     height: 60%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
-article.funcionamento div.detalhes div{
-    width: 25%;
+article.funcionamento div.detalhes div.organizer div{
+    width: 100%;
     box-sizing: border-box;
-    height: 40%;
+    height: 45%;
     padding: 0px 30px;
 }
 
@@ -291,10 +298,44 @@ div.ftlogo img{
 
 
 @media screen and (max-width:767px){
-  
+
+    header div.container{
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+        box-sizing: border-box;
+        padding: 0px 30px;
+
+        width: 100%;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    
+
+
+    article.principal{
+        height: 92vh;
+        width: 100vw;
+        background-color: #3A393E;
+        background: url(assets/imagem-alice-desktop.jpg) no-repeat left center;
+        background-size: cover;
+    }
+    
+   
     article.funcionamento p.descricao{
         padding: 20px;
         font-size: 14px;
+    }
+
+    article.funcionamento div.organizer{
+        box-sizing: content-box;
+        border: 1px solid red;
+        width: 100%;
     }
 
     div.ftajuda, div.ftdownload{
@@ -307,6 +348,7 @@ div.ftlogo img{
         color: white;
         font-size: 10px;
     }
+
    
 }
 
