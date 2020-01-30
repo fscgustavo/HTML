@@ -296,5 +296,17 @@ div.ftlogo img{
         padding: 20px;
         font-size: 14px;
     }
+
+    div.ftajuda, div.ftdownload{
+        width: 100%;
+    }
+
+    div.ftcontato ul li a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+    }
+   
 }
 
