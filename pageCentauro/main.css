@@ -165,6 +165,9 @@ article.funcionamento p.descricao{
 article.funcionamento h4{
     padding: 20px 0;
 }
+article.funcionamento h5{
+    margin-top: 20px;
+}
 
 article.funcionamento h4, article.funcionamento h5{
     text-transform: uppercase;
