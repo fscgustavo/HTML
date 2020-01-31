@@ -17,9 +17,9 @@ button:hover{
     cursor: pointer;
 }
 .container{
-    height: 100%;
-    width: 70%;
     margin: auto;
+    max-width: 1100px;
+    padding: 80px 0;
 }
 
 header div.container{
@@ -27,9 +27,8 @@ header div.container{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    box-sizing: border-box;
-    padding: 0px 60px;
+    height: 8vh;
+    padding: 5px 60px;
 }
 
 header{
@@ -37,6 +36,12 @@ header{
     width: 100vw;
     background-color: black;
     color: white;
+}
+
+header h1{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 28px;
 }
 
 header ul, div.ftcontato ul{
@@ -71,6 +76,10 @@ article.principal{
     background-color: #3A393E;
     background: url(assets/imagem-alice-desktop.jpg) no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 article.principal .container{
@@ -86,23 +95,23 @@ div.principal-chamada{
     text-align: center;
 
     padding-bottom: 20px;
+    border-bottom: 1px solid white;
 }
 
 div.principal-chamada h1{
-    font-size: 45px;
+    font-size: 64px;
     font-weight: normal;
 }
 
 div.principal-chamada p{
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 3px;
 }
 
 .subtitulo-principal{
     text-align: center;
-    border-top: 1px solid white;
-    padding: 10px 70px 40px 70px;
-    font-size: 12px;
+    padding: 15px;
+    font-size: 16px;
 }
 
 div.principal-produtos{
@@ -112,17 +121,18 @@ div.principal-produtos{
     align-items: center;
 }
 
-header h1, div.principal-produtos h1{
+
+div.principal-produtos h1{
+    padding-top: 40px;
     text-transform: uppercase;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 36px;
 }
-
 .btnPlay{
     background-color: transparent;
     border: none;
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
 
     background: url(assets/centauro-exp-botao-play.png);
     background-size:cover;
@@ -139,14 +149,13 @@ header h1, div.principal-produtos h1{
     color: white;
     text-transform: uppercase;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
 
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 
 article.funcionamento{
-    height: 70vh;
     width: 100vw;
     background-color: #FFFFFF;
     color: #3A393E;
@@ -166,8 +175,9 @@ article.funcionamento p.descricao{
     font-size: 16px;
 }
 
-article.funcionamento h4{
-    padding: 20px 0;
+
+article.funcionamento h4 {
+    padding: 60px 0;
 }
 article.funcionamento h5{
     margin-top: 20px;
@@ -178,25 +188,26 @@ article.funcionamento h4, article.funcionamento h5{
 }
 
 article.funcionamento div.organizer{
-    box-sizing: content-box;
-    width: 24%;
+   max-width: 275px;
+   
+   
 }
 
 article.funcionamento div.detalhes{
     width: 100%;
-    height: 60%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-article.funcionamento div.detalhes div.organizer div{
-    width: 100%;
-    box-sizing: border-box;
-    height: 40%;
-    padding: 5px 30px;
+div.description{
+    padding: 12px;
 }
 
+article.funcionamento div.detalhes-img{
+    height: 160px;
+}
 
 
 article.funcionamento .detalhes img{
@@ -205,9 +216,11 @@ article.funcionamento .detalhes img{
 }
 
 article.funcionamento .detalhes p{
-    font-size: 14px;
-    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px 5px;
 }
+
+
 
 footer{
     height: 40vh;
@@ -238,13 +251,14 @@ div.ftajuda, div.ftdownload{
 }
 
 div.ftajuda div.item, div.ftdownload div.item{
-    width: 40%;
+    max-width: 45%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;   
 }
 
 div.item div{
+    padding : 5px;
     margin-top:30px;
     text-align: center;
 }
@@ -261,7 +275,7 @@ div.ftajuda img{
 div.ftdownload button{
     border: none;
     border-radius: 2px;
-    margin-left: 5px;
+    
 }
 
 div.ftdownload button img{
@@ -284,6 +298,7 @@ div.ftcontato{
 
 div.ftcontato ul li{
     padding-left: 20px;
+    text-align: center;
 }
 div.ftcontato ul li a{
     text-transform: uppercase;
@@ -302,7 +317,7 @@ div.ftlogo img{
 }
 
 
-@media screen and (max-width:767px){
+@media screen and (max-width:414px){
 
     header div.container{
         display: flex; 
@@ -311,7 +326,101 @@ div.ftlogo img{
         align-items: center;
     
         box-sizing: border-box;
-        padding: 0px 30px;
+        padding: 10px 20px;
+
+        width: 100%;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    .btnComprar{
+        background-color: darkred;
+        border-radius: 2px;
+        font-size: 14px;
+        padding: 5px 12px;
+        color: white;
+        text-transform: uppercase;
+        border: none;
+    }
+    
+    
+
+    article.principal{
+        height: 92vh;
+        width: 100vw;
+        background-color: #3A393E;
+        background: url(assets/imagem-alice-desktop.jpg) no-repeat;
+        background-size: cover;
+    }
+    
+    div.principal-chamada h1{
+        font-size: 30px;
+        font-weight: normal;
+    }
+    
+    div.principal-chamada p{
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+    
+    p.subtitulo-principal{
+        font-size: 10px;
+    }
+
+    article.funcionamento p.descricao{
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    article.funcionamento div.organizer{
+        box-sizing: content-box;
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    div.ftajuda, div.ftdownload{
+        width: 100%;
+    }
+
+    div.ftajuda div.item{
+        width: 100%;
+    }
+
+    div.ftdownload div.item{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;   
+        align-items: center;
+    }
+
+    div.ftcontato ul li a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+    }
+
+    div.ftajuda, div.ftdownload{
+        font-size: 10px;
+    }
+    
+
+   
+}
+
+@media screen and (min-width: 415px) and (max-width:767px){
+
+    header div.container{
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+        box-sizing: border-box;
+        padding: 10px 20px;
 
         width: 100%;
     }
@@ -341,6 +450,7 @@ div.ftlogo img{
 
     article.funcionamento div.organizer{
         box-sizing: content-box;
+        padding-top: 10px;
         width: 100%;
     }
 
