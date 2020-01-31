@@ -8,9 +8,10 @@ body{
     font-family: Verdana, Helvetica, sans-serif;
     font-weight: normal;
     overflow-x: hidden;
-
+    height: auto;
     
 }
+
 
 button:hover{
     cursor: pointer;
@@ -215,6 +216,8 @@ footer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: auto;
+    position: static;
 }
 
 div.ftajuda, div.ftdownload{
@@ -316,6 +319,8 @@ div.ftlogo img{
     header ul{
         display: none;
     }
+
+    
 
     
 
