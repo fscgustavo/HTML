@@ -500,13 +500,13 @@ div.ftlogo img{
     
    
     article.funcionamento p.descricao{
-        padding: 20px;
+        padding: 20px 200px;
         font-size: 14px;
     }
 
     article.funcionamento div.organizer{
-        box-sizing: content-box;
         width: 49%;
+        padding: 50px;
     }
 
     div.ftajuda, div.ftdownload{
@@ -519,6 +519,7 @@ div.ftlogo img{
         color: white;
         font-size: 12px;
     }
+
 
    
 }
