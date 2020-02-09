@@ -1,0 +1,54 @@
+#conteudo {
+  padding: 15px;
+}
+#conteudo p {
+  color: black;
+}
+#conteudo a {
+  color: red;
+}
+#conteudo a:hover {
+  color: yellow;
+}
+
+h1 {
+  color: black;
+  background: yellow;
+  padding: 10px 5px;
+}
+
+h2 {
+  background-color: red;
+  font-size: 14px;
+  color: black;
+}
+
+.item-1 {
+  background: green;
+  margin-bottom: 2px;
+}
+
+.item-2 {
+  background: green;
+  margin-bottom: 2px;
+}
+
+.elemento-1 {
+  background: orange;
+}
+
+.elemento-2 {
+  background: orange;
+}
+
+.elem-1 {
+  background: orange;
+}
+
+.elem-2 {
+  background: orange;
+}
+
+/*# sourceMappingURL=teste.scss.map */
+
+/*# sourceMappingURL=teste.css.map */

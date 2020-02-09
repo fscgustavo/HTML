@@ -1,11 +1,62 @@
 $cor: black;
+$bg: red;
+
+@mixin titulo{
+  background: yellow;
+  padding: 10px 5px;
+}
+
+#conteudo{
+    padding: 15px;
+    p{
+      color: $cor;
+    }
+    a{
+      color: red;
+      &:hover{
+        color: yellow;
+      }
+    }
+}
 
 h1 {
   color: $cor;  
-}
+  @include titulo
+} 
 
 h2{
-  
+  background-color: $bg;
+  font-size: 14px;
+  color: $cor
+}
+
+// to or through
+@for $i from 1 to 3{
+  .item-#{$i}{
+    background: green;
+    margin-bottom: 2px;
+  }
+}
+
+
+$contador: 1;
+
+@while $contador < 3{
+  .elemento-#{$contador}{
+    background: orange;
+  }
+  $contador: $contador + 1;
+}
+
+
+$contador: 1;
+$lista: green, yellow, red;
+
+@while $contador < 3{
+  .elem-#{$contador}{
+    background: orange;
+  }
+  $contador: $contador + 1;
 }
 
 /*# sourceMappingURL=teste.scss.map */
